@@ -35,6 +35,12 @@ h2, h3 {
     margin-bottom: 30px;
 }
 
+.img {
+    width: 260px;
+    height: auto;
+}
+
+
 
 .def, .tb {
     color: rgb(152, 116, 172);
@@ -221,4 +227,5 @@ h2, h3 {
     width: 95%;
   }
 }
+
 
