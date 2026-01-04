@@ -70,9 +70,12 @@ h2, h3 {
 .acteurs {
     display: flex;
     justify-content: center;
-    gap: 40px;
+    gap: 20px;
     margin-top: 20px;
+    justify-content: center;
 }
+
+
 
 .acteurs div {
     text-align: center;
@@ -197,3 +200,23 @@ h2, h3 {
     font-style: italic;
     text-align: center;
 }
+
+
+.img {
+  width: 180px;        /* taille normale desktop */
+  max-width: 100%;     /* empêche le débordement */
+  height: auto;        /* garde les proportions */
+  display: block;
+}
+@media (max-width: 768px) {
+  .img {
+    width: 120px;      /* taille correcte sur téléphone */
+    margin: 0 auto;   /* centrage */
+  }
+
+  .acteurs {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
