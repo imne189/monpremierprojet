@@ -61,10 +61,6 @@ h2, h3 {
 }
 
 
-.img {
-    width: 260px;
-    height: auto;
-}
 
 
 .acteurs {
@@ -203,20 +199,26 @@ h2, h3 {
 
 
 .img {
-  width: 180px;        /* taille normale desktop */
-  max-width: 100%;     /* empêche le débordement */
-  height: auto;        /* garde les proportions */
+  width: 180px;
+  max-width: 100%;
+  height: auto;
   display: block;
 }
+
+/* Responsive mobile */
 @media (max-width: 768px) {
   .img {
-    width: 120px;      /* taille correcte sur téléphone */
-    margin: 0 auto;   /* centrage */
+    width: 120px;
+    margin: 0 auto;
   }
 
   .acteurs {
     flex-direction: column;
     align-items: center;
+  }
+
+  .content {
+    width: 95%;
   }
 }
 
